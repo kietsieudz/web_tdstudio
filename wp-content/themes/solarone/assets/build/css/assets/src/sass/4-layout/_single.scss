@@ -1,0 +1,83 @@
+.single-post {
+
+	.hentry.comments-closed.no-comments {
+		padding-bottom: var(--wp--preset--spacing--9);
+	}
+
+	.post-footer {
+
+		.wp-block-post-terms {
+			visibility: hidden;
+	
+			a {
+				visibility: visible;
+			}
+	
+			a:not(:last-child) {
+	
+				&:after {
+					content: ",";
+				}
+			}
+	
+			a:not(:first-child) {
+				margin-left: -5px;
+			}
+		}
+	}
+
+	.authorbox-wrap {
+
+		.wp-block-post-author {
+			display: block;
+
+			.wp-block-post-author {
+
+				&__byline {
+					margin-right: 5px;
+				}
+
+				&__byline,
+				&__name {
+					display: inline;
+				}
+
+				&__avatar {
+					margin-bottom: var(--wp--preset--spacing--6);
+
+					img {
+						width: 3rem;
+						height: 3rem;
+						border-radius: 100px;
+
+						@include breakpoint(sm) {
+							width: 6rem;
+							height: 6rem;
+						}
+					}
+				}
+
+				&__bio {
+					padding-top: var(--wp--preset--spacing--4);
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+/* Comments Reply */
+.comment-reply-title #cancel-comment-reply-link {
+	display: block;
+	padding-top: var(--wp--preset--spacing--2);
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+.comment-respond .form-submit {
+	margin: 0;
+}
+
+.comment-form-cookies-consent {
+	position: relative;
+}

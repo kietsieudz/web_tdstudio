@@ -1,0 +1,45 @@
+.site-header,
+.site-footer {
+
+	.wp-block-social-links {
+		list-style: none;
+	
+		.wp-social-link {
+	
+			a {
+				padding: 0;
+			}
+	
+			&.wp-social-link.wp-social-link {
+				margin: 0;
+			}
+		}
+
+		&.is-style-logos-only {
+	
+			.wp-social-link {
+				padding: 0;
+	
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 0;
+	
+					svg {
+						width: 1.5rem;
+						height: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.wp-block-social-links {
+	padding-left: 0;
+
+	.entry-content & {
+		padding-left: 0;
+	}
+}

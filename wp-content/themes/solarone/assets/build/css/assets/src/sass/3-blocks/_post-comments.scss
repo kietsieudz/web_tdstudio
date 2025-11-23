@@ -1,0 +1,16 @@
+.wp-block-comments-title {
+	padding-bottom: var(--wp--preset--spacing--5);
+}
+
+.wp-block-comment-edit-link {
+	padding-left: var(--wp--preset--spacing--3);
+}
+
+.wp-block-comment-content,
+.wp-block-comment-reply-link {
+	padding-top: var(--wp--preset--spacing--3);
+}
+
+.wp-block-column:not(:first-child) {
+	padding-left: var(--wp--preset--spacing--3);
+}
